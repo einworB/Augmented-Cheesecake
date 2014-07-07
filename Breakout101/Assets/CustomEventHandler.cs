@@ -1,22 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CustomEventHandler : MonoBehaviour, ITrackableEventHandler
+public class CustomEventHandler : MonoBehaviour
 {
 
     private TrackableBehaviour mTrackableBehaviour, ITrackableEventHandler;
     private bool isRenderer = false;
     private GameObject ball;
+
 	// Use this for initialization
     void Start()
     {
-        ball = GameObject.Find("Ball");
-        mTrackableBehaviour = GetComponent<TrackableBehaviour>();
-        if (mTrackableBehaviour)
-        {
-            mTrackableBehaviour.RegisterTrackableEventHandler(this);
-        }
-        OnTrackingLost();
     }
 	
 	// Update is called once per frame
@@ -24,13 +18,13 @@ public class CustomEventHandler : MonoBehaviour, ITrackableEventHandler
         if (isRenderer)
         {
             //ball.transform.position -= ball.transform.up * 5.0f * Time.deltaTime;
-            ball.AddComponent<Rigidbody>();
+          // ball.AddComponent<Rigidbody>();
         }
 	}
 
     private void OnTrackingFound()
     {
-        Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
+       /* Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
         Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
         // Enable rendering:
@@ -47,12 +41,12 @@ public class CustomEventHandler : MonoBehaviour, ITrackableEventHandler
 
         Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
 
-        isRenderer = true;
+        isRenderer = true; */
     }
 
     private void OnTrackingLost()
     {
-        Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
+        /*Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
         Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
         // Disable rendering:
@@ -68,22 +62,6 @@ public class CustomEventHandler : MonoBehaviour, ITrackableEventHandler
         }
 
         Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
-        isRenderer = false;
+        isRenderer = false;*/
     }
-
-    public void OnTrackableStateChanged(
-                                    TrackableBehaviour.Status previousStatus,
-                                    TrackableBehaviour.Status newStatus)
-    {
-        if (newStatus == TrackableBehaviour.Status.DETECTED ||
-            newStatus == TrackableBehaviour.Status.TRACKED ||
-            newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
-        {
-            OnTrackingFound();
-        }
-        else
-        {
-            OnTrackingLost();
-        }
-    }
-}
+ }
