@@ -54,7 +54,6 @@
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\DefaultInitializationErrorHandler.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\DefaultSmartTerrainEventHandler.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\DefaultTrackableEventHandler.cs" />
-     <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\DestroyBricks.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\GLErrorHandler.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\ImageTargetBehaviour.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\Internal\AndroidUnityPlayer.cs" />
@@ -67,7 +66,6 @@
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\MultiTargetBehaviour.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\PropBehaviour.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\QCARBehaviour.cs" />
-     <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\ResetButtonBehaviour.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\SetBGCameraLayerBehaviour.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\SmartTerrainBehaviour.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\SurfaceBehaviour.cs" />
@@ -80,6 +78,9 @@
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\WireframeBehaviour.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\WireframeTrackableEventHandler.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\WordBehaviour.cs" />
+     <Compile Include="Assets\Scripts\DestroyBricks.cs" />
+     <Compile Include="Assets\Scripts\OnTouchDown.cs" />
+     <Compile Include="Assets\Scripts\ResetButtonBehaviour.cs" />
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\VertexLitWithZ.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\StreamingAssets\QCAR\Leo.xml" />
