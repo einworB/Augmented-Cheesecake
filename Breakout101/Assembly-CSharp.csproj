@@ -79,6 +79,7 @@
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\WireframeTrackableEventHandler.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\WordBehaviour.cs" />
      <Compile Include="Assets\Scripts\DestroyBricks.cs" />
+     <Compile Include="Assets\Scripts\NewBallButtonBehaviour.cs" />
      <Compile Include="Assets\Scripts\OnTouchDown.cs" />
      <Compile Include="Assets\Scripts\ResetButtonBehaviour.cs" />
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\VertexLitWithZ.shader" />
