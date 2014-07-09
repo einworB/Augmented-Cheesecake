@@ -12,23 +12,12 @@ public class ResetButtonBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (Input.touchCount == 1)
+        {
+            gameObject.guiText.color = new Color32(255, 13, 13, 155); //red
+            resetBall();
+        }
 	}
-
-    void OnMouseEnter()
-    {
-        gameObject.guiText.color = new Color32(255, 13, 13, 155); //red
-        resetBall();
-    }
-
-    void OnMouseUp()
-    {
-        
-    }
-
-    void OnMouseExit()
-    {
-        gameObject.guiText.color = new Color32(255, 255, 255, 255);  //white
-    }
 
     private void resetBall()
     {
@@ -37,5 +26,6 @@ public class ResetButtonBehaviour : MonoBehaviour {
         GameObject ball = GameObject.FindGameObjectWithTag("ball");
         ball.transform.position = pos;
         DestroyBricks.minusPoints();
+        gameObject.guiText.color = new Color32(255, 255, 255, 255);  //white
     }
 }
