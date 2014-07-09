@@ -14,7 +14,7 @@ public class DestroyBricks : MonoBehaviour {
     void OnCollisionEnter(Collision col)
     {
         Debug.Log(col.gameObject.name);
-        if (col.gameObject.name == "Brick")
+        if (col.gameObject.name == "Brick" || col.gameObject.name == "breze")
         {
             Destroy(col.gameObject);
             currentPoints += 100;
