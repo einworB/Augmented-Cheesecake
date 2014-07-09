@@ -3,10 +3,11 @@ using System.Collections;
 
 public class ResetButtonBehaviour : MonoBehaviour {
 
+    private GameObject upperWall;
+
 	// Use this for initialization
-    private Vector3 defaultPos = new Vector3(0,0.2f,0);
 	void Start () {
-	
+       
 	}
 	
 	// Update is called once per frame
@@ -31,8 +32,10 @@ public class ResetButtonBehaviour : MonoBehaviour {
 
     private void resetBall()
     {
+        upperWall = GameObject.FindGameObjectWithTag("UpperWall");
+        Vector3 pos = new Vector3(upperWall.transform.position.x, upperWall.transform.position.y - 0.2f, upperWall.transform.position.z);
         GameObject ball = GameObject.FindGameObjectWithTag("ball");
-        ball.transform.position = defaultPos;
-        //DestroyBricks.minusPoints();
+        ball.transform.position = pos;
+        DestroyBricks.minusPoints();
     }
 }

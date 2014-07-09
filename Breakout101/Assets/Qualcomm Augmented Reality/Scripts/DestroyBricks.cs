@@ -6,6 +6,11 @@ public class DestroyBricks : MonoBehaviour {
     public static GameObject points;
     private static int currentPoints = 0;
 
+
+    void Start()
+    {
+        points = GameObject.FindGameObjectWithTag("pointsText");
+    }
     void OnCollisionEnter(Collision col)
     {
         Debug.Log(col.gameObject.name);
