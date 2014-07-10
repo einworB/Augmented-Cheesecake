@@ -1,0 +1,4 @@
+http://answers.unity3d.com/questions/39793/enable-or-disable-rigid-body-at-runtime.html
+https://developer.vuforia.com/forum/unity-3-extension-technical-discussion/how-add-touch-listener-3d-object-unitys
+http://www.fontspace.com/peter-wiegel/fette-unz-fraktur
+http://textcraft.net/download-fonts.php
